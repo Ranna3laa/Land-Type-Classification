@@ -15,6 +15,9 @@ The model will be beneficial for applications like **urban planning, environment
 - The project will use **open-source datasets** or generate custom datasets using tools like **QGIS**.
 - Sentinel-2 provides **multispectral images**, making it ideal for land classification tasks.
 
+  ## Our Website link
+           https://huggingface.co/spaces/YasmineOribi/type_land_classification
+
 ## 🛠 Tools & Libraries
 The following tools and libraries will be used to process images and train the classification model:
 - **Pandas** 🐼 - Data manipulation

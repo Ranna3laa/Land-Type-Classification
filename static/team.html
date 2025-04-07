@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Team</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rajdhani:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: white;
+        font-family: "Orbitron", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #111;
+      }
+
+      .header-title {
+        font-size: 40px;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        margin: 0;
+      }
+
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        font-family: "Orbitron", sans-serif;
+      }
+
+      nav a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: cyan;
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 70px;
+          right: 20px;
+          background: rgba(0, 0, 0, 0.8);
+          padding: 10px;
+          border-radius: 5px;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          display: block;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+
+      /* Team Section */
+      .team {
+        text-align: center;
+        padding: 50px;
+      }
+
+      .team h2 {
+        font-size: 35px;
+        color: cyan;
+        margin-bottom: 20px;
+      }
+
+      #team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .team-member {
+        width: 250px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .team-member:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.7);
+      }
+
+      .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .team-member h3 {
+        margin: 10px 0 5px;
+        color: cyan;
+      }
+
+      .team-member p {
+        color: gray;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #111;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      footer a {
+        color: white;
+        padding: 10px;
+        transition: color 0.3s ease-in-out;
+      }
+
+      footer a:hover {
+        color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Meet Our Team</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </header>
+
+    <section class="team">
+      <h2>Our Amazing Team</h2>
+      <div id="team-container">
+        <div class="team-member">
+          <a href="https://www.linkedin.com/in/yasmine-oribi-4459882a9" target="_blank">
+            <img
+              src="https://avatars.githubusercontent.com/u/170033634?v=4"
+              alt="Yasmin Adel"
+            />
+            <h3>Yasmin Yasser</h3>
+            <p><b>Project Leader</b></p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a
+            href="https://www.linkedin.com/in/seif-khalled-83bb99252/"
+            target="_blank"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D35AQEjKptdmyUZXA/profile-framedphoto-shrink_400_400/B4DZVHOMH.HwAg-/0/1740656657188?e=1741813200&v=beta&t=GmohwJnO_bRX79gdVc0wjwCVuXl7Rg0VnyxUWLxszuo"
+              alt="Seif Khalled"
+            />
+            <h3>Seif Khalled</h3>
+            <p><b>Data Scientist</b></p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a
+            href="https://www.linkedin.com/in/mostafa-mahmoud-10a96a223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQH_A5aqg73vJQ/profile-displayphoto-shrink_400_400/B4DZT7bwdGGcAg-/0/1739385145721?e=1746662400&v=beta&t=o8V74TghC7axPUrKePiaf1QW1C-R6IxSRssdRUCZuFI"
+              alt="Mostafa Mahmoud"
+            />
+            <h3>Mostafa Mahmoud</h3>
+            <p><b>Data Scientist</b></p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a
+            href="https://www.linkedin.com/in/yousef-mohamed-bb607a2a5"
+            target="_blank"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQHVBPl_rXfZtw/profile-displayphoto-shrink_400_400/B4DZT7gKOtG4Ak-/0/1739386300120?e=1746662400&v=beta&t=GqiIQlSnNB9Vj0zBcc3QXnSt8RRSOxiH-xymGQAjkq8"
+              alt="Yousef Mohamed"
+            />
+            <h3>Yousef Mohamed</h3>
+            <p><b>Data Scientist</b></p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a
+            href="https://www.linkedin.com/in/ranna3laa"
+            target="_blank"
+          >
+            <img
+              src="https://avatars.githubusercontent.com/u/125459577?v=4"
+              alt="Rana Alaa"
+            />
+            <h3>Rana Alaa</h3>
+            <p><b>Data Scientist</b></p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a
+            href="https://www.linkedin.com/in/ziad-mohamed-a0131130a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQFr9N0GrCy9NA/profile-displayphoto-shrink_800_800/B4DZUF3c2cHIAc-/0/1739560178078?e=1746662400&v=beta&t=1f_WfcL9N-BuCaG20pVvA9GgRsGSk0_07gF6Rmx4yzo"
+              alt="Zeyad Mohamed"
+            />
+            <h3>Zeyad Mohamed</h3>
+            <p><b>Data Scientist</b></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Our Team | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

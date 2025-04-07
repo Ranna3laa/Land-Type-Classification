@@ -1,8 +1,0 @@
-pip install uvicorn fastapi torchvision ultralytics
-sudo apt update && sudo apt install -y libgl1
-pip install opencv-python-headless
-
-uvicorn api:app --host 0.0.0.0 --port 8000 --reload
-
-https://................................app.github.dev/static/index.html
-

@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-torch
-numpy
-pandas
-pillow
-opencv-python
-yolov

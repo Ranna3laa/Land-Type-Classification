@@ -1,0 +1,16 @@
+name: eurosat_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - tensorflow
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - seaborn
+  - opencv
+  - pillow
+  - mlflow
+  - keras-tuner
